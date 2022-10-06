@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+</head>
+<body>
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#countries">Countries</a>
+    
+
+    <input type="text" placeholder="Search..">
+  </div>
+    <h1><b><i> Living Like Letshabo</i></b></h1>
+    <h3><i>"Where you travel like a princess"</i></h3>
+    
+    <div class="mySlides1 fade">
+        <img src="C:\Users\User\OneDrive - University of Witwatersrand\Desktop\HTML5 Demo project\cape town.jpg" style="width:100%" style="height=50%">
+        </div>
+    
+      <div class="mySlides1 fade">
+       <img src="C:\Users\User\OneDrive - University of Witwatersrand\Desktop\HTML5 Demo project\france.jpg" style="width:100%" style="height=50%">
+     </div>
+    
+      <div class="mySlides1 fade">
+        <img src="C:\Users\User\OneDrive - University of Witwatersrand\Desktop\HTML5 Demo project\america.jpg" style="width:100%" style="height=50%">
+       </div>
+    
+      <div class="mySlides1 fade">
+        <img src="C:\Users\User\OneDrive - University of Witwatersrand\Desktop\HTML5 Demo project\italy2.jpg" style="width:100%" style="height=50%">
+        </div>
+    
+      <div class="mySlides1 fade">
+    <img src="C:\Users\User\OneDrive - University of Witwatersrand\Desktop\HTML5 Demo project\mozambique.jpg" style="width:100%" style="height=50%">
+       </div>
+    
+      <div class="mySlides1 fade">
+        <img src="C:\Users\User\OneDrive - University of Witwatersrand\Desktop\HTML5 Demo project\lesotho.jpg" style="width:100%" style="height=50%">
+    </div>
+      
+      
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides1");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+    </script>
+    
+      <script>
+        function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+      </script>
+
+<h2>Who are we?</h2>
+<p>Are you in need of a cheap vacation? Then look no further... Living Like Letshabo is a travel agency that is ready to book all
+   your flights, accommodation, provide transport and create an adventure for all our clients.</p>
+
+   <p>We have competitive rates with partners all over the world to assist you with everything you need.
+   Need a translator? We've got you.
+   Need to exchange money? We've got you
+   Need help with your visa? <b>WE'VE GOT YOU!</b></p>
+
+   <p>We pride ourselves in giving our clients 5-star treatment at a 2-star rate.</p>
+   <p>Our travel agents are hand-pciked from the best universities and go through a 6-month training programme to provide the best services to our clients.Our company has the best turn-over rate of clients to family and 
+    we boast about having the longest relationship with our clients.</p>
+
+   <p>Living Like Letshabo has franchises in all the countries listed here and we have a personal relationship with customers worldwide. Our refundable and booking policy is the most competititve
+    within the travel agency space</p>
+
+<h2>About our company</h2>
+<p>Founded in February 2022 by Paballo Sejanamane, who took an interest in web development and web-design,
+  she set her sights out for the world. Paballo felt as though life had a lot in store for her and that she could
+  not minimize who she was, nor neglect her talents
+</p>
+<p>However, she soon found that travelling at 23 was no easy feat and that she found herself wondering around the world
+  wishing someone could help her, that's when she founded "Living Like Letshabo" which is duly named after her maternal
+  family who she believes made her into the person she is today.
+</p>
+
+<p>Paballo dreams for everyone to have their own freedom, with a 5-star experience at a 2-star rate. She is passionate,
+  about the youth, travelling,and discovering oneself
+</p>
+
+
+<figure>
+  <img src="C:\Users\User\OneDrive - University of Witwatersrand\Desktop\HTML5 Demo project\profile picture.jpg" alt="Profile picture" width="40%" height="40%">
+  <figcaption>Paballo Sejanamane (Founder of Living Like Letshabo).</figcaption>
+</figure>
+
+    <style>
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        </style>
+
+<div class="row">
+  <div class="column">
+    <img src="C:\Users\User\OneDrive - University of Witwatersrand\Desktop\HTML5 Demo project\camping.jpg" alt="Camping" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="C:\Users\User\OneDrive - University of Witwatersrand\Desktop\HTML5 Demo project\cottage.jpg" alt="Cottage" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="C:\Users\User\OneDrive - University of Witwatersrand\Desktop\HTML5 Demo project\townhouse.jpg" alt="Townhouse" style="width:100%">
+  </div>
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides2");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<script>
+  function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+  x.className += " responsive";
+} else {
+  x.className = "topnav";
+}
+}
+</script>
+
+<h4>We belive in providing the best comfort and therefore have camping, villas, towhouses and various</h4>
+<h4>places of rest for each of our clients. Whether you prefer a small or big house to accommodate</h4>
+<h4>you, your loved one or even a weekend away with family and friends, we've got you covered</h4>
+<p>
+<p><h4>All you have to do is fill the form below and one of our friendly agents will contact you</h4></p>
+</p>
+
+<div class="container">
+    <div style="text-align:center">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="C:\Users\User\OneDrive - University of Witwatersrand\Desktop\HTML5 Demo project\hot air balloon.jpg" style="width:100%">
+        <p>Swing by for a consultation, or leave us a message:</p>
+    </div>
+
+    <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">South Africa</option>
+            <option value="usa">UK</option>
+            <option value="usa">New Zeland</option>
+            <option value="usa">Mexico</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+    
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+
+  <script>
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+  </script>
+
+<h5>Address: 1 AppleBerry Street, Johannesburg, South Africa</h5>
+<h6>PO Box: 3245 AppleBerry Street, Johannesburg, South Africa, 452</h6>
+
+
+</body>
+</html>
